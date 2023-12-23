@@ -1,0 +1,88 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    
+}
+.book-contain{
+    padding-top: 80px;
+}
+.book-contain h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 500;
+    color: #FF5B22;
+    font-size: 50px;
+    position: relative;
+}
+.book-contain h1::after{
+    content: "";
+    width: 23.5%;
+    height: 40%;
+    background-color: #FECDA6;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.book-contain h1:hover::after{
+    height: 70%;
+}
+@media screen and (max-width: 768px){
+    .book-contain h1::after{
+        width: 50%;
+        left: 25%;
+    }
+}
+.bookmark-body{
+    margin: 48px 0 30px;
+    padding: 24px 15px;
+    border-bottom: 2px #FF9130 dotted;
+    border-top: 2px #FF9130 dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bookmark-body h2{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 500;
+    background-image: linear-gradient(to right,  #FF5B22, #A9A9A9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+label{
+    color: #A9A9A9;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.bookmark-body button{
+    width: 18%;
+    background-color: #FF5B22;
+    color: #FECDA6;
+}
+.bookmark-body button:hover{
+    background-color: #9f2e09;
+    color: #FECDA6;
+}
+table thead tr th{
+    color: #474545 !important;
+}
+.btn-visit, .btn-visit a{
+    background-color: #FF9130;
+    color: #FFF; 
+}
+.btn-visit a{
+    text-decoration: none;
+}
+.btn-visit:hover{
+    background-color: #FF9130;
+    color: #FFF;
+}

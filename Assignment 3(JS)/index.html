@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- Favicon -->
+    <link rel ="icon" href="images/bookmark.png">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <!-- fontawsome css -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Alegreya:ital,wght@0,400;0,500;1,500;1,900&family=Amatic+SC:wght@400;700&family=Inter:wght@200;400;500&family=Luxurious+Roman&family=Montserrat:wght@200;300;400;500;600;800;900&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@200;300;400;700&family=Pacifico&family=Poppins:wght@100;200;300;400;800&family=Roboto:wght@100;300;400;700&family=Source+Sans+3:wght@300;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Alegreya:ital,wght@0,400;0,500;1,500;1,900&family=Amatic+SC:wght@400;700&family=Inter:wght@200;400;500&family=Luxurious+Roman&family=Montserrat:wght@200;300;400;500;600;800;900&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@200;300;400;700&family=Pacifico&family=Poppins:wght@100;200;300;400;800&family=Righteous&family=Roboto:wght@100;300;400;700&family=Source+Sans+3:wght@300;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div class="book-contain container ">
+            <h1 class="text-center">Bookmarker</h1>
+            <div class="bookmark-body">
+                <h2 class="pb-4 fs-4 text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="w-100 mb-3">
+                    <label for="siteNameInput" class="fw-bolder pb-2">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" id="siteNameInput" class="form-control" placeholder="Bookmark Name"></input>
+                </div>
+                <div class="w-100 mb-3">
+                    <label for="siteURLInput" class="fw-bolder pb-2">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </label>
+                    <input type="url" id="siteURLInput" class="form-control" placeholder="Website URL" required></input>
+                </div>  
+                <button class="btn" onclick="addSite()"> Submit </button>
+            </div>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id= "table-body">
+                   
+                </tbody>
+            </table>
+            
+        </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
